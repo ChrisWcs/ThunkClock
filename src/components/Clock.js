@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import ClockFace from './ClockFace';
+
 const Clock = ({time, func}) => (
     <div>
-        <h1>{time.toTimeString()}</h1>
+        <ClockFace time={time}/>
         <button onClick={func}>start</button>
     </div>
 );
