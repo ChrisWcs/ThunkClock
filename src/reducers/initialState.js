@@ -1,5 +1,5 @@
 const initialState = () => ({
-    time: ""
+    time: new Date()
 });
 
 export default initialState;
